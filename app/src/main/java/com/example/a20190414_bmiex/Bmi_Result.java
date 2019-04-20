@@ -17,8 +17,11 @@ public class Bmi_Result extends AppCompatActivity {
         bmiresultEdt = findViewById(R.id.bmiresultEdt);
         resultEdt = findViewById(R.id.resultEdt);
 
+
         float bmi = getIntent().getFloatExtra("bmi",0);
-        bmiresultEdt.setText(String.valueOf(bmi));
+        String strbmi = String.format("%.2f",bmi);           //소수점 2자리 미만 버리기
+        bmiresultEdt.setText(String.valueOf(strbmi));
+
 
         if (bmi<18.5) {
             resultEdt.setText("저체중");

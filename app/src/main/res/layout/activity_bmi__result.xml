@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".Bmi_Result">
 
     <LinearLayout
@@ -13,24 +14,28 @@
         android:orientation="horizontal"
         android:layout_margin="50dp">
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="BMI지수"
-            android:textSize="20dp" />
+            android:textSize="30dp" />
         <EditText
             android:id="@+id/bmiresultEdt"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAlignment="center"
             />
 
     </LinearLayout>
 
     <EditText
         android:id="@+id/resultEdt"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"/>
+        android:layout_margin="50dp"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
 
 
 </LinearLayout>
